@@ -19,7 +19,7 @@ It's also got two versions of some operators that have different precedence e.g.
 - PHP has uppcase and lower case versions of some commands (uppercase indicates constants, they can be used interchangely)
 - booleans: true equates to 1, false equates to null
 - if else statements structured in a simialar way to JS
-
+- There's a special :: used to refernce particluar data in a class (Useful when subclasses want to use data stored in the parent)
  
 ## Techniques
 - There's an exponent operator for powers **
@@ -31,7 +31,7 @@ It's also got two versions of some operators that have different precedence e.g.
 - What multiple iterators in one for loop! Madness!
 - With loops, you break out of nested operations by using break with a number e.g. break 2;
 - casting a value (override the namture of type coercion)
-
+- Using the fucntion_exits to test if function is available
 ## Learnings
 
 ## Mistakes
@@ -39,9 +39,17 @@ It's also got two versions of some operators that have different precedence e.g.
 - When using the Here Docs selector <<<_END the closing syntax must start at the begining of a new line. No exceptions.
 - Watch your logical operators: there's two different versions
 - Writing for loops, i kept missriting the iterator variable i != $i
+- I ran into problems with `` strings need to brush up on when and how you can use them
+-I wasn't able to get constructors working for objects
+-I tried calleing an object method how you wouldin Javascript, insread it uses the ->
+- Getting up to speed with $ inside classes, when to use them, how to reference them
 ## Glossary
 -Casting: you can cast to an object, cast to an array
 -Associativty: how are these values are processed
+- Class - a model 
+- Instance: an individiaul occurence of the class
+- Encapuslation: An object properties can only be modified by its methods
+- Inheritance: Creating subclasses which inherit properties and methods of parent
 
 ## Ideas to be able to explain
 - loosely typed: PHP is loosely typed.
