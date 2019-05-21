@@ -32,6 +32,7 @@ It's also got two versions of some operators that have different precedence e.g.
 - With loops, you break out of nested operations by using break with a number e.g. break 2;
 - casting a value (override the namture of type coercion)
 - Using the fucntion_exits to test if function is available
+- Associative Arrays: rather than indexes you can refer to value by a name
 ## Learnings
 
 ## Mistakes
@@ -43,6 +44,7 @@ It's also got two versions of some operators that have different precedence e.g.
 -I wasn't able to get constructors working for objects
 -I tried calleing an object method how you wouldin Javascript, insread it uses the ->
 - Getting up to speed with $ inside classes, when to use them, how to reference them
+- Was trying to shuffle an array, but forgot that I to use the original array and instead wwas trying to shuffle a string
 ## Glossary
 -Casting: you can cast to an object, cast to an array
 -Associativty: how are these values are processed
