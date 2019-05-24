@@ -89,6 +89,7 @@
             <a href="experiment.php">Experiment</a>
             <a href="functions.php">Functions</a>
             <a href="arrays.php">Arrays</a>
+            <a href="practical-php.php">Practical PHP</a>
         </div>
         <script src="js/index.js"></script>
     </body>
