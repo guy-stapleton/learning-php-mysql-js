@@ -45,6 +45,8 @@ It's also got two versions of some operators that have different precedence e.g.
 -I tried calleing an object method how you wouldin Javascript, insread it uses the ->
 - Getting up to speed with $ inside classes, when to use them, how to reference them
 - Was trying to shuffle an array, but forgot that I to use the original array and instead wwas trying to shuffle a string
+- I ran into problems writing out a file. After 30mins of troubleshooting (checking MAMP file permissions), the problem was my variable names were inconsistent.
+
 ## Glossary
 -Casting: you can cast to an object, cast to an array
 -Associativty: how are these values are processed
