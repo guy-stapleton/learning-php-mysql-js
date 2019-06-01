@@ -7,6 +7,8 @@ It does have some extra operators that are interesting.
 
 It's also got two versions of some operators that have different precedence e.g. OR and || (the || has higher precedence)
 
+If you install mysql via MAMP and you also nstall it via brew which one are you using? You can run a search to see these details.
+
 ## Notes
 - <?php ?> and <? ?> are equivalent
 - Variables are declared with $name
@@ -33,6 +35,9 @@ It's also got two versions of some operators that have different precedence e.g.
 - casting a value (override the namture of type coercion)
 - Using the fucntion_exits to test if function is available
 - Associative Arrays: rather than indexes you can refer to value by a name
+- Idea of normal forms when designing daabases (1st, 2nd, 3rd)
+- Transactions in MYSQL : balancing process of making changes to data. Begin, commit, rollback;
+
 ## Learnings
 
 ## Mistakes
@@ -46,14 +51,20 @@ It's also got two versions of some operators that have different precedence e.g.
 - Getting up to speed with $ inside classes, when to use them, how to reference them
 - Was trying to shuffle an array, but forgot that I to use the original array and instead wwas trying to shuffle a string
 - I ran into problems writing out a file. After 30mins of troubleshooting (checking MAMP file permissions), the problem was my variable names were inconsistent.
+- Setting up mysql command line. I installed mysql via homebrew. However still ran to error. The problem was described as an issue with socket not showing in correct location. However , I also found a post about installing mysql through brew that also pointed to installing an additional package for macos called brew services. This allows you to start mysql through the command line and I could then get the command line figured out.
+- I had a problem installing a db for silverstripe when setting up an new host. The problem was I was not using the root user details stored in MAMP.
+- I had a big problem gettin insert into to work correctly. There some issue swith typos however after that it still did not work. In the end I removed the id colum that was set to auto increment and it then worked. I later learnt they way around this problem is to pass a null value for the id column that's set to auto increment
 
 ## Glossary
--Casting: you can cast to an object, cast to an array
--Associativty: how are these values are processed
+- Casting: you can cast to an object, cast to an array
+- Associativty: how are these values are processed
 - Class - a model 
 - Instance: an individiaul occurence of the class
 - Encapuslation: An object properties can only be modified by its methods
 - Inheritance: Creating subclasses which inherit properties and methods of parent
+- Normalisation: db design. Designing data to avoid duplicatin and takea dvantage of primary and scecondary keys.
+- Types of Db relationships: 1 to many, many to 1, 1 to 1
+- Join tables
 
 ## Ideas to be able to explain
 - loosely typed: PHP is loosely typed.
