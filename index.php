@@ -90,6 +90,12 @@
             <a href="functions.php">Functions</a>
             <a href="arrays.php">Arrays</a>
             <a href="practical-php.php">Practical PHP</a>
+            <a href="mysql.php">Mysql</a>
+            <a href="mysqltest.php">Mysqltest</a>
+            <a href="insert.php">Insert</a>
+            <a href="formtest.php">Formtest</a>
+            <a href="auth.php">Auth</a>
+            <a href="authenticateusers.php">Authenitcate Users</a>
         </div>
         <script src="js/index.js"></script>
     </body>
