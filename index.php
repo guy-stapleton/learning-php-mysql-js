@@ -96,7 +96,11 @@
             <a href="formtest.php">Formtest</a>
             <a href="auth.php">Auth</a>
             <a href="authenticateusers.php">Authenitcate Users</a>
+            <a href="validate.html">Validate</a>
+            <a href="regex.php">Regex</a>
+            <a href="async.html">Async</a>
+            <a href="abs-positioning.html">Absolute positioning</p>
         </div>
-        <script src="js/index.js"></script>
+        <!-- <script src="js/index.js"></script> -->
     </body>
 </html>
