@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+    <head>
+        <title>Validate with JS and PHP</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <style>
+            label {
+                display: block;
+                position: relative;
+                margin-bottom: 20px;
+            }
+
+            input {
+                position: absolute;
+                left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <form id="account" action="validate.php" method="post">
+                <p><span class="fnerror"></span></p>
+                <label for="firstname">First Name
+                    <input type="text" name="firstname" />
+                </label>
+                <label for="surname">Surname
+                    <input type="text" name="surname" />
+                </label>
+                <label for="email">email
+                    <input type="text" name="email" />
+                </label>
+                <label for="password">password
+                    <input type="text" name="password" />
+                </label>
+                <input type="submit" value="Create account" />
+            </form>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
