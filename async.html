@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+<!-- urlpost.html -->
+
+<head>
+    <title>Asynchronous Communication Example</title>
+</head>
+
+<body style='text-align:center'>
+    <h1>Loading a web page into a DIV</h1>
+    <div id='info'>This sentence will be replaced</div>
+
+    <script>
+    //    function reqListener() {
+    //         let res = JSON.parse(this.responseText);
+    //         let info = document.querySelector('#info');
+    //         for (let val in res) {
+    //             info.innerHTML += `<p>${res[val]}<p>`
+    //         }
+    //     }
+        function username(){
+            return new Promise(resolve => {
+                var oReq = new XMLHttpRequest();
+                oReq.open("GET", "https://api.github.com/users/guy-stapleton");
+                oReq.onload = () => resolve(oReq.responseText);        
+                oReq.send();
+            })
+        }
+        // var oReq = new XMLHttpRequest();
+        // oReq.addEventListener("load", reqListener);
+        // oReq.open("GET", "https://api.github.com/users/guy-stapleton");
+    //     oReq.send();
+          username().then(val => console.log(val))
+    // params = "url=news.com"
+    //         request = new asyncRequest()
+
+    //         request.open("POST", "urlpost.php", true)
+    //         request.setRequestHeader("Content-type",
+    //             "application/x-www-form-urlencoded")
+    //         request.setRequestHeader("Content-length", params.length)
+    //         request.setRequestHeader("Connection", "close")
+
+    //         request.onreadystatechange = function () {
+    //             if (this.readyState == 4) {
+    //                 if (this.status == 200) {
+    //                     if (this.responseText != null) {
+    //                         document.getElementById('info').innerHTML =
+    //                             this.responseText
+    //                     }
+    //                     else alert("Communication error: No data received")
+    //                 }
+    //                 else alert("Communication error: " + this.statusText)
+    //             }
+    //         }
+
+    //         request.send(params)
+
+    //         function asyncRequest() {
+    //             try {
+    //                 var request = new XMLHttpRequest()
+    //             }
+    //             catch (e1) {
+    //                 try {
+    //                     request = new ActiveXObject("Msxml2.XMLHTTP")
+    //                 }
+    //                 catch (e2) {
+    //                     try {
+    //                         request = new ActiveXObject("Microsoft.XMLHTTP")
+    //                     }
+    //                     catch (e3) {
+    //                         request = false
+    //                     }
+    //                 }
+    //             }
+    //             return request
+    //         }
+    </script>
+</body>
+
+</html>
