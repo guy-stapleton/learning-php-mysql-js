@@ -99,7 +99,8 @@
             <a href="validate.html">Validate</a>
             <a href="regex.php">Regex</a>
             <a href="async.html">Async</a>
-            <a href="abs-positioning.html">Absolute positioning</p>
+            <a href="abs-positioning.html">Absolute positioning</a>
+            <a href="local-storage.php">Local Storage</a>
         </div>
         <!-- <script src="js/index.js"></script> -->
     </body>
